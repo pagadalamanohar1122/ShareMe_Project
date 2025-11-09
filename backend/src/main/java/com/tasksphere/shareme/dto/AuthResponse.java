@@ -1,0 +1,32 @@
+package com.tasksphere.shareme.dto;
+
+public class AuthResponse {
+    
+    private String accessToken;
+    private UserInfo user;
+    
+    // Constructors
+    public AuthResponse() {}
+    
+    public AuthResponse(String accessToken, UserInfo user) {
+        this.accessToken = accessToken;
+        this.user = user;
+    }
+    
+    // Getters and Setters
+    public String getAccessToken() {
+        return accessToken;
+    }
+    
+    public void setAccessToken(String accessToken) {
+        this.accessToken = accessToken;
+    }
+    
+    public UserInfo getUser() {
+        return user;
+    }
+    
+    public void setUser(UserInfo user) {
+        this.user = user;
+    }
+}
